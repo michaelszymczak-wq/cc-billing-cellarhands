@@ -12,7 +12,7 @@ import consumablesRouter from './routes/consumables';
 import usersRouter from './routes/users';
 
 const app = express();
-const PORT = process.env.PORT || 3007;
+const PORT = process.env.PORT || 3008;
 
 // Serve frontend static files in production
 const publicDir = path.join(__dirname, '..', 'public');
@@ -24,7 +24,7 @@ if (hasPublic) {
 } else {
   // Development: frontend on separate port needs CORS
   app.use(cors({
-    origin: ['http://localhost:5177', 'http://127.0.0.1:5177', 'http://localhost:5178', 'http://127.0.0.1:5178'],
+    origin: ['http://localhost:5178', 'http://127.0.0.1:5178'],
     credentials: true,
   }));
 }
