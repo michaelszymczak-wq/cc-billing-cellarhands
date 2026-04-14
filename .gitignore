@@ -1,0 +1,10 @@
+node_modules
+backend/dist
+backend/public
+.env
+.env.local
+.env.production
+.firebase
+.DS_Store
+*.tsbuildinfo
+frontend/node_modules/.vite
